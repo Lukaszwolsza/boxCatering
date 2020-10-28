@@ -1,0 +1,8 @@
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\bin\Debug\Wolsza.Controls.dll
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\bin\Debug\Wolsza.Controls.pdb
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.csprojAssemblyReference.cache
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.csproj.GenerateResource.cache
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.csproj.CoreCompileInputs.cache
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.dll
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.pdb
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.dietBox.resources
