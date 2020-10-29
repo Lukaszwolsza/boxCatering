@@ -48,12 +48,21 @@
     <Compile Include="dietBox.Designer.cs">
       <DependentUpon>dietBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="formElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="formElement.Designer.cs">
+      <DependentUpon>formElement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="dietBox.resx">
       <DependentUpon>dietBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formElement.resx">
+      <DependentUpon>formElement.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

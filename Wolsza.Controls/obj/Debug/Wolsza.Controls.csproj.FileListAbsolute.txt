@@ -6,3 +6,4 @@ C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.dll
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.pdb
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.dietBox.resources
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.formElement.resources

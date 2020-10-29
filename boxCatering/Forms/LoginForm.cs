@@ -22,7 +22,6 @@ namespace boxCatering
         {
             if (loginTextBox.Text == "admin" && passwordTextBox.Text == "admin")
             {
-                
                 MainForm mainform = new MainForm();
                 mainform.Show();
                 //this.Close();
