@@ -130,7 +130,7 @@
             // 
             // dietBox4
             // 
-            this.dietBox4.dietName = "dietName";
+            this.dietBox4.dietName = "No meat Diet";
             this.dietBox4.firstLabel = "diet Desc 1";
             this.dietBox4.Location = new System.Drawing.Point(667, 367);
             this.dietBox4.Name = "dietBox4";
@@ -141,7 +141,7 @@
             // 
             // dietBox5
             // 
-            this.dietBox5.dietName = "dietName";
+            this.dietBox5.dietName = "Keto Diet";
             this.dietBox5.firstLabel = "diet Desc 1";
             this.dietBox5.Location = new System.Drawing.Point(369, 367);
             this.dietBox5.Name = "dietBox5";
@@ -152,7 +152,7 @@
             // 
             // dietBox6
             // 
-            this.dietBox6.dietName = "dietName";
+            this.dietBox6.dietName = "Vegan Diet";
             this.dietBox6.firstLabel = "diet Desc 1";
             this.dietBox6.Location = new System.Drawing.Point(69, 367);
             this.dietBox6.Name = "dietBox6";
@@ -163,7 +163,7 @@
             // 
             // dietBox3
             // 
-            this.dietBox3.dietName = "dietName";
+            this.dietBox3.dietName = "3000kcal Diet";
             this.dietBox3.firstLabel = "diet Desc 1";
             this.dietBox3.Location = new System.Drawing.Point(667, 157);
             this.dietBox3.Name = "dietBox3";
@@ -174,8 +174,8 @@
             // 
             // dietBox2
             // 
-            this.dietBox2.dietName = ":D ";
-            this.dietBox2.firstLabel = "diet Desc 1";
+            this.dietBox2.dietName = "2500kcal Diet";
+            this.dietBox2.firstLabel = "160g Protein / 70g Fat / 250g Carbs";
             this.dietBox2.Location = new System.Drawing.Point(369, 157);
             this.dietBox2.Name = "dietBox2";
             this.dietBox2.secondLabel = "diet Desc 2";
@@ -185,8 +185,8 @@
             // 
             // dietBox1
             // 
-            this.dietBox1.dietName = "siema";
-            this.dietBox1.firstLabel = "diet Desc 1";
+            this.dietBox1.dietName = "2000kcal Diet";
+            this.dietBox1.firstLabel = "150g Protein / 65g Fat / 203g Carbs";
             this.dietBox1.Location = new System.Drawing.Point(69, 157);
             this.dietBox1.Name = "dietBox1";
             this.dietBox1.secondLabel = "diet Desc 2";

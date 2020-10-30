@@ -61,5 +61,30 @@ namespace boxCatering.Forms
             }
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/");
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.Hand;
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            Cursor.Current = Cursors.Hand;
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            Cursor.Current = Cursors.Hand;
+        }
+
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            Cursor.Current = Cursors.Hand;
+        }
     }
 }

@@ -41,9 +41,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.formElement1 = new Wolsza.Controls.formElement();
-            this.formElement2 = new Wolsza.Controls.formElement();
-            this.formElement3 = new Wolsza.Controls.formElement();
+            this.newsletterCheckbox = new System.Windows.Forms.CheckBox();
             this.sendFormData = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,8 +50,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.newsletterCheckbox = new System.Windows.Forms.CheckBox();
             this.errorMessage = new System.Windows.Forms.Label();
+            this.formElement2 = new Wolsza.Controls.formElement();
+            this.formElement1 = new Wolsza.Controls.formElement();
+            this.formElement3 = new Wolsza.Controls.formElement();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -164,6 +164,8 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // pictureBox2
             // 
@@ -174,6 +176,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseMove);
             // 
             // pictureBox3
             // 
@@ -184,6 +187,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseMove);
             // 
             // flowLayoutPanel1
             // 
@@ -197,35 +201,17 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(344, 200);
             this.flowLayoutPanel1.TabIndex = 31;
             // 
-            // formElement1
+            // newsletterCheckbox
             // 
-            this.formElement1.BackColor = System.Drawing.Color.White;
-            this.formElement1.formUserInput = "";
-            this.formElement1.formUserLabel = "Your email :";
-            this.formElement1.Location = new System.Drawing.Point(3, 57);
-            this.formElement1.Name = "formElement1";
-            this.formElement1.Size = new System.Drawing.Size(331, 48);
-            this.formElement1.TabIndex = 2;
-            // 
-            // formElement2
-            // 
-            this.formElement2.BackColor = System.Drawing.Color.White;
-            this.formElement2.formUserInput = "";
-            this.formElement2.formUserLabel = "Your name :";
-            this.formElement2.Location = new System.Drawing.Point(3, 3);
-            this.formElement2.Name = "formElement2";
-            this.formElement2.Size = new System.Drawing.Size(331, 48);
-            this.formElement2.TabIndex = 1;
-            // 
-            // formElement3
-            // 
-            this.formElement3.BackColor = System.Drawing.Color.White;
-            this.formElement3.formUserInput = "";
-            this.formElement3.formUserLabel = "Phone num :";
-            this.formElement3.Location = new System.Drawing.Point(3, 111);
-            this.formElement3.Name = "formElement3";
-            this.formElement3.Size = new System.Drawing.Size(331, 48);
-            this.formElement3.TabIndex = 3;
+            this.newsletterCheckbox.AutoSize = true;
+            this.newsletterCheckbox.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.newsletterCheckbox.Location = new System.Drawing.Point(3, 165);
+            this.newsletterCheckbox.Name = "newsletterCheckbox";
+            this.newsletterCheckbox.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.newsletterCheckbox.Size = new System.Drawing.Size(279, 24);
+            this.newsletterCheckbox.TabIndex = 41;
+            this.newsletterCheckbox.Text = "Add me to newsletter!";
+            this.newsletterCheckbox.UseVisualStyleBackColor = true;
             // 
             // sendFormData
             // 
@@ -309,18 +295,6 @@
             this.panel1.Size = new System.Drawing.Size(250, 1);
             this.panel1.TabIndex = 40;
             // 
-            // newsletterCheckbox
-            // 
-            this.newsletterCheckbox.AutoSize = true;
-            this.newsletterCheckbox.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.newsletterCheckbox.Location = new System.Drawing.Point(3, 165);
-            this.newsletterCheckbox.Name = "newsletterCheckbox";
-            this.newsletterCheckbox.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.newsletterCheckbox.Size = new System.Drawing.Size(279, 24);
-            this.newsletterCheckbox.TabIndex = 41;
-            this.newsletterCheckbox.Text = "Add me to newsletter!";
-            this.newsletterCheckbox.UseVisualStyleBackColor = true;
-            // 
             // errorMessage
             // 
             this.errorMessage.AutoSize = true;
@@ -332,6 +306,36 @@
             this.errorMessage.TabIndex = 41;
             this.errorMessage.Text = "Fill all inputs ! ";
             this.errorMessage.Visible = false;
+            // 
+            // formElement2
+            // 
+            this.formElement2.BackColor = System.Drawing.Color.White;
+            this.formElement2.formUserInput = "";
+            this.formElement2.formUserLabel = "Your name :";
+            this.formElement2.Location = new System.Drawing.Point(3, 3);
+            this.formElement2.Name = "formElement2";
+            this.formElement2.Size = new System.Drawing.Size(331, 48);
+            this.formElement2.TabIndex = 1;
+            // 
+            // formElement1
+            // 
+            this.formElement1.BackColor = System.Drawing.Color.White;
+            this.formElement1.formUserInput = "";
+            this.formElement1.formUserLabel = "Your email :";
+            this.formElement1.Location = new System.Drawing.Point(3, 57);
+            this.formElement1.Name = "formElement1";
+            this.formElement1.Size = new System.Drawing.Size(331, 48);
+            this.formElement1.TabIndex = 2;
+            // 
+            // formElement3
+            // 
+            this.formElement3.BackColor = System.Drawing.Color.White;
+            this.formElement3.formUserInput = "";
+            this.formElement3.formUserLabel = "Phone num :";
+            this.formElement3.Location = new System.Drawing.Point(3, 111);
+            this.formElement3.Name = "formElement3";
+            this.formElement3.Size = new System.Drawing.Size(331, 48);
+            this.formElement3.TabIndex = 3;
             // 
             // ContactForm
             // 
