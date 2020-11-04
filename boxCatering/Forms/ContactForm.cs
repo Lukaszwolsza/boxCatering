@@ -86,5 +86,15 @@ namespace boxCatering.Forms
         {
             Cursor.Current = Cursors.Hand;
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.twitter.com/");
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/");
+        }
     }
 }

@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.leftArrowButton = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.rightArrowButton = new System.Windows.Forms.Button();
-            this.dietBox4 = new Wolsza.Controls.dietBox();
-            this.dietBox5 = new Wolsza.Controls.dietBox();
             this.dietBox6 = new Wolsza.Controls.dietBox();
+            this.dietBox5 = new Wolsza.Controls.dietBox();
+            this.dietBox4 = new Wolsza.Controls.dietBox();
             this.dietBox3 = new Wolsza.Controls.dietBox();
             this.dietBox2 = new Wolsza.Controls.dietBox();
             this.dietBox1 = new Wolsza.Controls.dietBox();
@@ -48,12 +50,36 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Location = new System.Drawing.Point(-3, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(975, 68);
             this.panel3.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Yu Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(712, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 21);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Łukasz Wolsza";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(632, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 21);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Welcome ";
             // 
             // label3
             // 
@@ -85,6 +111,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(117, 9);
             this.label1.Name = "label1";
@@ -107,6 +134,7 @@
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.rightArrowButton);
             this.panel8.Controls.Add(this.label1);
             this.panel8.Controls.Add(this.leftArrowButton);
@@ -128,71 +156,61 @@
             this.rightArrowButton.UseVisualStyleBackColor = false;
             this.rightArrowButton.Click += new System.EventHandler(this.rightArrowButton_Click);
             // 
-            // dietBox4
+            // dietBox6
             // 
-            this.dietBox4.dietName = "No meat Diet";
-            this.dietBox4.firstLabel = "diet Desc 1";
-            this.dietBox4.Location = new System.Drawing.Point(667, 367);
-            this.dietBox4.Name = "dietBox4";
-            this.dietBox4.secondLabel = "diet Desc 2";
-            this.dietBox4.Size = new System.Drawing.Size(233, 169);
-            this.dietBox4.TabIndex = 29;
-            this.dietBox4.thirdLabel = "diet Desc 3";
+            this.dietBox6.dietDescription = "A diet which doesn\'t contain meat.";
+            this.dietBox6.dietName = "Vegetarian Diet";
+            this.dietBox6.Location = new System.Drawing.Point(667, 367);
+            this.dietBox6.Name = "dietBox6";
+            this.dietBox6.Size = new System.Drawing.Size(233, 169);
+            this.dietBox6.TabIndex = 29;
             // 
             // dietBox5
             // 
+            this.dietBox5.dietDescription = "A keto diet is based on protein, fat and small amount of carbs.";
             this.dietBox5.dietName = "Keto Diet";
-            this.dietBox5.firstLabel = "diet Desc 1";
             this.dietBox5.Location = new System.Drawing.Point(369, 367);
             this.dietBox5.Name = "dietBox5";
-            this.dietBox5.secondLabel = "diet Desc 2";
             this.dietBox5.Size = new System.Drawing.Size(233, 169);
             this.dietBox5.TabIndex = 28;
-            this.dietBox5.thirdLabel = "diet Desc 3";
             // 
-            // dietBox6
+            // dietBox4
             // 
-            this.dietBox6.dietName = "Vegan Diet";
-            this.dietBox6.firstLabel = "diet Desc 1";
-            this.dietBox6.Location = new System.Drawing.Point(69, 367);
-            this.dietBox6.Name = "dietBox6";
-            this.dietBox6.secondLabel = "diet Desc 2";
-            this.dietBox6.Size = new System.Drawing.Size(233, 169);
-            this.dietBox6.TabIndex = 27;
-            this.dietBox6.thirdLabel = "diet Desc 3";
+            this.dietBox4.dietDescription = "A diet for vegans, doesn\'t contain animal products and meat.";
+            this.dietBox4.dietName = "Vegan Diet";
+            this.dietBox4.Location = new System.Drawing.Point(69, 367);
+            this.dietBox4.Name = "dietBox4";
+            this.dietBox4.Size = new System.Drawing.Size(233, 169);
+            this.dietBox4.TabIndex = 27;
             // 
             // dietBox3
             // 
+            this.dietBox3.dietDescription = "A balanced diet which include 3000kcal";
             this.dietBox3.dietName = "3000kcal Diet";
-            this.dietBox3.firstLabel = "diet Desc 1";
             this.dietBox3.Location = new System.Drawing.Point(667, 157);
             this.dietBox3.Name = "dietBox3";
-            this.dietBox3.secondLabel = "diet Desc 2";
             this.dietBox3.Size = new System.Drawing.Size(233, 169);
             this.dietBox3.TabIndex = 26;
-            this.dietBox3.thirdLabel = "diet Desc 3";
+            this.dietBox3.Load += new System.EventHandler(this.dietBox3_Load);
             // 
             // dietBox2
             // 
+            this.dietBox2.dietDescription = "A balanced diet which include 2500kcal";
             this.dietBox2.dietName = "2500kcal Diet";
-            this.dietBox2.firstLabel = "160g Protein / 70g Fat / 250g Carbs";
             this.dietBox2.Location = new System.Drawing.Point(369, 157);
             this.dietBox2.Name = "dietBox2";
-            this.dietBox2.secondLabel = "diet Desc 2";
             this.dietBox2.Size = new System.Drawing.Size(233, 169);
             this.dietBox2.TabIndex = 25;
-            this.dietBox2.thirdLabel = "diet Desc 3";
+            this.dietBox2.Load += new System.EventHandler(this.dietBox2_Load);
             // 
             // dietBox1
             // 
+            this.dietBox1.dietDescription = "A balanced diet which include 2000kcal";
             this.dietBox1.dietName = "2000kcal Diet";
-            this.dietBox1.firstLabel = "150g Protein / 65g Fat / 203g Carbs";
             this.dietBox1.Location = new System.Drawing.Point(69, 157);
             this.dietBox1.Name = "dietBox1";
-            this.dietBox1.secondLabel = "diet Desc 2";
             this.dietBox1.Size = new System.Drawing.Size(233, 169);
             this.dietBox1.TabIndex = 24;
-            this.dietBox1.thirdLabel = "diet Desc 3";
             // 
             // MainForm
             // 
@@ -200,9 +218,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 610);
-            this.Controls.Add(this.dietBox4);
-            this.Controls.Add(this.dietBox5);
             this.Controls.Add(this.dietBox6);
+            this.Controls.Add(this.dietBox5);
+            this.Controls.Add(this.dietBox4);
             this.Controls.Add(this.dietBox3);
             this.Controls.Add(this.dietBox2);
             this.Controls.Add(this.dietBox1);
@@ -233,8 +251,10 @@
         private Wolsza.Controls.dietBox dietBox1;
         private Wolsza.Controls.dietBox dietBox2;
         private Wolsza.Controls.dietBox dietBox3;
-        private Wolsza.Controls.dietBox dietBox4;
-        private Wolsza.Controls.dietBox dietBox5;
         private Wolsza.Controls.dietBox dietBox6;
+        private Wolsza.Controls.dietBox dietBox5;
+        private Wolsza.Controls.dietBox dietBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }

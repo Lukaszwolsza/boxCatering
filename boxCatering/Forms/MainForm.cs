@@ -57,8 +57,18 @@ namespace boxCatering.Forms
         private void DietBox_OrderBtnClick(object sender, EventArgs e)
         {
             this.Close();
-            PurchasedOrderForm purchasedorderform = new PurchasedOrderForm();
-            purchasedorderform.Show();
+            orderDetailsForm orderdetailsform = new orderDetailsForm();
+            orderdetailsform.Show();
+        }
+
+        private void dietBox3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dietBox2_Load(object sender, EventArgs e)
+        {
+
         }
 
         //dietBox.OrderButtonClick += new EventHandler(UserControl_ButtonClick);

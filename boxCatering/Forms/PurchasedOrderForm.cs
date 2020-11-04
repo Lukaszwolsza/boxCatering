@@ -19,14 +19,37 @@ namespace boxCatering.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Close();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            MainForm mainform = new MainForm();
-            mainform.Show();
+            orderDetailsForm orderdetailform = new orderDetailsForm();
+            orderdetailform.Show();
+        }
+
+        private void cardInfo1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dialogres;
+            dialogres = MessageBox.Show("Thanks for your order !");
+            if(dialogres == System.Windows.Forms.DialogResult.OK)
+            {
+                this.Close();
+                MainForm mainform = new MainForm();
+                mainform.Show();
+            }
+            
+        }
+
+        private void sumOrderLabel6_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

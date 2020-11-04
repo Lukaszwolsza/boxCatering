@@ -44,12 +44,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.creditsLabel = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -58,10 +58,10 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -240,6 +240,17 @@
             this.panel4.Size = new System.Drawing.Size(200, 200);
             this.panel4.TabIndex = 27;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(65, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(18)))));
@@ -251,7 +262,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(150, 78);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Step 1. Fill the form and order diet that\'s fits you.";
+            this.textBox1.Text = "Step 1. Find a diet that siuts you.";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel5
@@ -296,22 +307,11 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 250);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 244);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(992, 290);
             this.flowLayoutPanel1.TabIndex = 28;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(65, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // creditsLabel
             // 
@@ -350,11 +350,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

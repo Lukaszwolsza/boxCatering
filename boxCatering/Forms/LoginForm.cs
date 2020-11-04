@@ -24,7 +24,6 @@ namespace boxCatering
             {
                 MainForm mainform = new MainForm();
                 mainform.Show();
-                //this.Close();
             }
         }
 

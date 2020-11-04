@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Card.cs" />
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Order.cs" />
+    <Compile Include="Classes\User.cs" />
     <Compile Include="Forms\ContactForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +73,12 @@
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\orderDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\orderDetailsForm.Designer.cs">
+      <DependentUpon>orderDetailsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PurchasedOrderForm.cs">
       <SubType>Form</SubType>
@@ -95,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\orderDetailsForm.resx">
+      <DependentUpon>orderDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PurchasedOrderForm.resx">
       <DependentUpon>PurchasedOrderForm.cs</DependentUpon>
