@@ -15,6 +15,7 @@ namespace boxCatering.Forms
         public PurchasedOrderForm()
         {
             InitializeComponent();
+            sumOrderLabel10.userSummaryData = "hello";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -25,7 +26,7 @@ namespace boxCatering.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            orderDetailsForm orderdetailform = new orderDetailsForm();
+            orderDetailsForm orderdetailform = new orderDetailsForm("");
             orderdetailform.Show();
         }
 
@@ -50,6 +51,16 @@ namespace boxCatering.Forms
         private void sumOrderLabel6_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void PurchasedOrderForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void returnMAINForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            Cursor.Current = Cursors.Hand;
         }
     }
 }

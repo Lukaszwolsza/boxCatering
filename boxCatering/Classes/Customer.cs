@@ -17,5 +17,45 @@ namespace boxCatering.Classes
         public int Phone { get; private set; }
 
 
+        public Customer(string name, string surname, string email, string address, int postcode, string city, int phone)
+        {
+            setCustomerName(name);
+            setCustomerSurname(surname);
+            setCustomerEmail(email);
+            setCustomerAddress(address);
+            setCustomerPostcode(postcode);
+            setCustomerCity(city);
+            setCustomerPhone(phone);
+        }
+
+        public void setCustomerName(string name)
+        {
+            this.Name = name;
+        }
+        public void setCustomerSurname(string surname)
+        {
+            this.Surname = surname;
+        }
+        public void setCustomerEmail(string email)
+        {
+            this.Email = email;
+        }
+        public void setCustomerAddress(string address)
+        {
+            this.Address = address;
+        }
+        public void setCustomerPostcode(int postcode)
+        {
+            this.Postcode = postcode;
+        }
+        public void setCustomerCity(string city)
+        {
+            this.City = city;
+        }
+        public void setCustomerPhone(int phone)
+        {
+            this.Phone = phone;
+        }
+
     }
 }

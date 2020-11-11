@@ -1,4 +1,5 @@
-﻿using System;
+﻿using boxCatering.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,12 @@ namespace boxCatering.Forms
     {
 
         private dietBox dietbox;
+        public static string typeOfdiet;
         
+
         public MainForm()
         {
             InitializeComponent();
-
             
         }
 
@@ -52,13 +54,20 @@ namespace boxCatering.Forms
         private void MainForm_Load(object sender, EventArgs e)
         {
             dietBox.OrderBtnClick += DietBox_OrderBtnClick;
+            string login = Form1.userLogin;
+            userLogin.Text = login;
+
         }
 
         private void DietBox_OrderBtnClick(object sender, EventArgs e)
         {
+            var btn = (dietBox)sender;
+            string name = btn.Name;
+
             this.Close();
-            orderDetailsForm orderdetailsform = new orderDetailsForm();
+            orderDetailsForm orderdetailsform = new orderDetailsForm(name);
             orderdetailsform.Show();
+
         }
 
         private void dietBox3_Load(object sender, EventArgs e)
@@ -71,6 +80,9 @@ namespace boxCatering.Forms
 
         }
 
+
+
+        
         //dietBox.OrderButtonClick += new EventHandler(UserControl_ButtonClick);
 
         //protected void UserControl_ButtonClick(object sender, EventArgs e)

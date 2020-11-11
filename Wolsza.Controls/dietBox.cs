@@ -12,39 +12,6 @@ namespace Wolsza.Controls
 {
     public partial class dietBox: UserControl
     {
-        public string firstLabel
-        {
-            get
-            {
-                return firstDescLabel.Text;
-            }
-            set
-            {
-                firstDescLabel.Text = value;
-            }
-        }
-        public string secondLabel
-        {
-            get
-            {
-                return secondDescLabel.Text;
-            }
-            set
-            {
-                secondDescLabel.Text = value;
-            }
-        }
-        public string thirdLabel
-        {
-            get
-            {
-                return thirdDescLabel.Text;
-            }
-            set
-            {
-                thirdDescLabel.Text = value;
-            }
-        }
         public string dietName
         {
             get
@@ -58,6 +25,28 @@ namespace Wolsza.Controls
             }
         }
 
+        public string dietDescription {
+            get
+            {
+                return dietDesc.Text;
+            }
+            set
+            {
+                dietDesc.Text = value;
+            }
+        }
+
+        //public string orderBtn
+        //{
+        //    get
+        //    {
+        //        return orderBtn.Name;
+        //    }
+        //    set
+        //    {
+
+        //    }
+        //}
 
         [Browsable(true)]
         [Category("Action")]
@@ -72,6 +61,11 @@ namespace Wolsza.Controls
         {
             InitializeComponent();
             
+        }
+
+        private void orderDietBtn_MouseMove(object sender, MouseEventArgs e)
+        {
+            Cursor.Current = Cursors.Hand;
         }
 
 

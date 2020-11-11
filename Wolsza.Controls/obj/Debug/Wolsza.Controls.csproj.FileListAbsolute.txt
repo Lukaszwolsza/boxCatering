@@ -7,3 +7,6 @@ C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.pdb
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.dietBox.resources
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.formElement.resources
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.sumOrderLabel.resources
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.test.resources
+C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\Wolsza.Controls\obj\Debug\Wolsza.Controls.cardInfo.resources

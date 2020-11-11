@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.userLogin = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.userLogin);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.button3);
@@ -59,25 +59,25 @@
             this.panel3.Size = new System.Drawing.Size(975, 68);
             this.panel3.TabIndex = 7;
             // 
-            // label4
+            // userLogin
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(712, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 21);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Łukasz Wolsza";
+            this.userLogin.AutoSize = true;
+            this.userLogin.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.userLogin.ForeColor = System.Drawing.Color.White;
+            this.userLogin.Location = new System.Drawing.Point(740, 20);
+            this.userLogin.Name = "userLogin";
+            this.userLogin.Size = new System.Drawing.Size(115, 27);
+            this.userLogin.TabIndex = 10;
+            this.userLogin.Text = "userName";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(632, 25);
+            this.label2.Location = new System.Drawing.Point(652, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 21);
+            this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Welcome ";
             // 
@@ -254,7 +254,7 @@
         private Wolsza.Controls.dietBox dietBox6;
         private Wolsza.Controls.dietBox dietBox5;
         private Wolsza.Controls.dietBox dietBox4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label userLogin;
         private System.Windows.Forms.Label label2;
     }
 }

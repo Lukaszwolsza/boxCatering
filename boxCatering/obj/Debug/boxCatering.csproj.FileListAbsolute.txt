@@ -15,5 +15,4 @@ C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\boxCatering\bin\Debug\Wol
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\boxCatering\bin\Debug\Wolsza.Controls.pdb
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\boxCatering\obj\Debug\boxCatering.csproj.CopyComplete
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\boxCatering\obj\Debug\boxCatering.Forms.PurchasedOrderForm.resources
-C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\boxCatering\obj\Debug\boxCatering.Test.resources
 C:\Users\Luasek\Desktop\V SEMESTR\JIPP LAB\boxCatering\boxCatering\obj\Debug\boxCatering.Forms.orderDetailsForm.resources

@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.thirdDescLabel = new System.Windows.Forms.Label();
-            this.secondDescLabel = new System.Windows.Forms.Label();
-            this.firstDescLabel = new System.Windows.Forms.Label();
+            this.dietDesc = new System.Windows.Forms.TextBox();
             this.orderDietBtn = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.dietNameLabel = new System.Windows.Forms.Label();
@@ -41,10 +39,9 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.thirdDescLabel);
-            this.panel1.Controls.Add(this.secondDescLabel);
-            this.panel1.Controls.Add(this.firstDescLabel);
+            this.panel1.Controls.Add(this.dietDesc);
             this.panel1.Controls.Add(this.orderDietBtn);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -52,32 +49,17 @@
             this.panel1.Size = new System.Drawing.Size(233, 169);
             this.panel1.TabIndex = 12;
             // 
-            // thirdDescLabel
+            // dietDesc
             // 
-            this.thirdDescLabel.AutoSize = true;
-            this.thirdDescLabel.Location = new System.Drawing.Point(12, 109);
-            this.thirdDescLabel.Name = "thirdDescLabel";
-            this.thirdDescLabel.Size = new System.Drawing.Size(61, 13);
-            this.thirdDescLabel.TabIndex = 5;
-            this.thirdDescLabel.Text = "diet Desc 3";
-            // 
-            // secondDescLabel
-            // 
-            this.secondDescLabel.AutoSize = true;
-            this.secondDescLabel.Location = new System.Drawing.Point(12, 81);
-            this.secondDescLabel.Name = "secondDescLabel";
-            this.secondDescLabel.Size = new System.Drawing.Size(61, 13);
-            this.secondDescLabel.TabIndex = 4;
-            this.secondDescLabel.Text = "diet Desc 2";
-            // 
-            // firstDescLabel
-            // 
-            this.firstDescLabel.AutoSize = true;
-            this.firstDescLabel.Location = new System.Drawing.Point(12, 53);
-            this.firstDescLabel.Name = "firstDescLabel";
-            this.firstDescLabel.Size = new System.Drawing.Size(61, 13);
-            this.firstDescLabel.TabIndex = 3;
-            this.firstDescLabel.Text = "diet Desc 1";
+            this.dietDesc.BackColor = System.Drawing.Color.White;
+            this.dietDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dietDesc.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dietDesc.Location = new System.Drawing.Point(23, 63);
+            this.dietDesc.Multiline = true;
+            this.dietDesc.Name = "dietDesc";
+            this.dietDesc.Size = new System.Drawing.Size(187, 67);
+            this.dietDesc.TabIndex = 2;
+            this.dietDesc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // orderDietBtn
             // 
@@ -93,6 +75,7 @@
             this.orderDietBtn.Text = "Order";
             this.orderDietBtn.UseVisualStyleBackColor = false;
             this.orderDietBtn.Click += new System.EventHandler(this.orderDietBtn_Click);
+            this.orderDietBtn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.orderDietBtn_MouseMove);
             // 
             // panel9
             // 
@@ -135,8 +118,6 @@
         private System.Windows.Forms.Button orderDietBtn;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label dietNameLabel;
-        private System.Windows.Forms.Label thirdDescLabel;
-        private System.Windows.Forms.Label secondDescLabel;
-        private System.Windows.Forms.Label firstDescLabel;
+        private System.Windows.Forms.TextBox dietDesc;
     }
 }

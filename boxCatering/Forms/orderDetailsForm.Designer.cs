@@ -44,6 +44,9 @@
             this.formElement5 = new Wolsza.Controls.formElement();
             this.formElement6 = new Wolsza.Controls.formElement();
             this.formElement7 = new Wolsza.Controls.formElement();
+            this.sumOrderLabel11 = new Wolsza.Controls.sumOrderLabel();
+            this.sumOrderLabel10 = new Wolsza.Controls.sumOrderLabel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -132,7 +135,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(657, 393);
+            this.button1.Location = new System.Drawing.Point(665, 561);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 35);
             this.button1.TabIndex = 30;
@@ -151,8 +154,10 @@
             // cardInfo1
             // 
             this.cardInfo1.BackColor = System.Drawing.Color.White;
+            this.cardInfo1.cardCcvNumber = "";
+            this.cardInfo1.cardExpDate = "";
             this.cardInfo1.cardNum = "";
-            this.cardInfo1.Location = new System.Drawing.Point(556, 187);
+            this.cardInfo1.Location = new System.Drawing.Point(564, 355);
             this.cardInfo1.Name = "cardInfo1";
             this.cardInfo1.Size = new System.Drawing.Size(350, 200);
             this.cardInfo1.TabIndex = 27;
@@ -227,12 +232,43 @@
             this.formElement7.Size = new System.Drawing.Size(331, 48);
             this.formElement7.TabIndex = 6;
             // 
+            // sumOrderLabel11
+            // 
+            this.sumOrderLabel11.Location = new System.Drawing.Point(523, 265);
+            this.sumOrderLabel11.Name = "sumOrderLabel11";
+            this.sumOrderLabel11.orderSummaryLabel = "> Desc :";
+            this.sumOrderLabel11.Size = new System.Drawing.Size(427, 91);
+            this.sumOrderLabel11.TabIndex = 35;
+            this.sumOrderLabel11.userSummaryData = "Low calories diet";
+            // 
+            // sumOrderLabel10
+            // 
+            this.sumOrderLabel10.Location = new System.Drawing.Point(523, 211);
+            this.sumOrderLabel10.Name = "sumOrderLabel10";
+            this.sumOrderLabel10.orderSummaryLabel = "> Type :";
+            this.sumOrderLabel10.Size = new System.Drawing.Size(335, 48);
+            this.sumOrderLabel10.TabIndex = 34;
+            this.sumOrderLabel10.userSummaryData = "2000 kcal";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(566, 167);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 25);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Diet";
+            // 
             // orderDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 610);
+            this.Controls.Add(this.sumOrderLabel11);
+            this.Controls.Add(this.sumOrderLabel10);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cardInfo1);
@@ -244,6 +280,7 @@
             this.Name = "orderDetailsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "orderDetailsForm";
+            this.Load += new System.EventHandler(this.orderDetailsForm_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -270,5 +307,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private Wolsza.Controls.formElement formElement7;
+        private Wolsza.Controls.sumOrderLabel sumOrderLabel11;
+        private Wolsza.Controls.sumOrderLabel sumOrderLabel10;
+        private System.Windows.Forms.Label label5;
     }
 }

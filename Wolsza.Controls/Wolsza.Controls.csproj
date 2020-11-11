@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cardInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cardInfo.Designer.cs">
+      <DependentUpon>cardInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="dietBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -55,14 +61,35 @@
       <DependentUpon>formElement.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sumOrderLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sumOrderLabel.Designer.cs">
+      <DependentUpon>sumOrderLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="cardInfo.resx">
+      <DependentUpon>cardInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dietBox.resx">
       <DependentUpon>dietBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formElement.resx">
       <DependentUpon>formElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sumOrderLabel.resx">
+      <DependentUpon>sumOrderLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
