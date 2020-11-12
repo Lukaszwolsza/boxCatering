@@ -8,19 +8,19 @@ namespace boxCatering.Classes
 {
     public class Card
     {
-        public int cardNumber { get; private set; }
+        public long cardNumber { get; private set; }
         public int cardExpDate { get; private set; }
         public int cardCCV { get; private set; }
 
 
-        public Card(int cardnumber, int cardexpdate, int cardccv)
+        public Card(long cardnumber, int cardexpdate, int cardccv)
         {
             setCardNumber(cardnumber);
             setCardExpDate(cardexpdate);
             setCardCCV(cardccv);
         }
 
-        public void setCardNumber(int cardnumber)
+        public void setCardNumber(long cardnumber)
         {
             this.cardNumber = cardnumber;
         }

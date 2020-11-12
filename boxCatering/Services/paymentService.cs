@@ -11,18 +11,22 @@ namespace boxCatering.Services
 {
     class paymentService
     {
-        public void addCardToBase(Card card)
+        public int addCardToBase(Card card)
         {
+            int cardID;
             string sqlStringConnector = "Server =.; Database = boxCatering; Trusted_Connection = True;";
             using (var sqlConnection = new SqlConnection(sqlStringConnector))
             {
                 sqlConnection.Open();
 
-                using (var command = new SqlCommand($"INSERT INTO dbo.cards+ VALUES ('{card.cardNumber}','{card.cardExpDate}','{card.cardCCV}')", sqlConnection))
+                using (var command = new SqlCommand($"INSERT INTO dbo.cards VALUES ('{card.cardNumber}','{card.cardExpDate}','{card.cardCCV}'); SELECT SCOPE_IDENTITY();", sqlConnection))
                 {
                     var result = command.ExecuteNonQuery();
-                } 
+                    cardID = Convert.ToInt32(command.ExecuteScalar());
+                    return cardID;
+                }
             }
+            return cardID;
         }
 
     }

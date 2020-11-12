@@ -8,13 +8,18 @@ namespace boxCatering.Classes
 {
     public class Order
     {
+        //public int orderID { get; private set; }
         public Customer customers { get; private set; }
         public Card cards { get; private set; }
 
-        public Order(Customer customer, Card cards)
+        public object diets { get; set; }
+
+
+        public Order(Customer customer, Card cards, object diets)
         {
             setCustomer(customer);
             setCard(cards);
+            setDiet(diets);
         }
 
         public void setCustomer(Customer customer)
@@ -25,6 +30,10 @@ namespace boxCatering.Classes
         public void setCard(Card card)
         {
             this.cards = card;
+        }
+        public void setDiet(object diet)
+        {
+            this.diets = diet;
         }
 
     }

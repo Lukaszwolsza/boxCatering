@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace boxCatering.Classes
 {
-    interface IDiet
+    public interface IDiet
     {
         int dietID { get; set; }
         string dietType { get; set; }

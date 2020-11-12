@@ -48,7 +48,7 @@ namespace boxCatering.Forms
         }
         public Card getCardInformation()
         {
-            int cardnumber = Convert.ToInt32(cardInfo1.cardNum);
+            long cardnumber = Convert.ToInt64(cardInfo1.cardNum);
             int cardexpdate = Convert.ToInt32(cardInfo1.cardExpDate);
             int cardCCV = Convert.ToInt32(cardInfo1.cardCcvNumber);
 
@@ -59,27 +59,31 @@ namespace boxCatering.Forms
         private void button1_Click(object sender, EventArgs e)
         {       
             customerService customerserv = new customerService();
-            customerserv.addCustomerToBase(getCustomerInformation());
+            int customerID = customerserv.addCustomerToBase(getCustomerInformation());
  
             paymentService paymentserv = new paymentService();
-            paymentserv.addCardToBase(getCardInformation());
+            int paymentID = paymentserv.addCardToBase(getCardInformation());
 
+            dietService dietserv = new dietService();
+            int dietID = dietserv.getDietObj(sumOrderLabel10.userSummaryData);
+            //int dietID = dietserv.getDietID(sumOrderLabel10.userSummaryData);
             
-            
+            //Order order = new Order(getCustomerInformation(), getCardInformation(), dietObj);
 
+            orderService orderserv = new orderService();
+            orderserv.addOrderToBase(customerID, dietID, paymentID);
+            
 
             this.Close();
             PurchasedOrderForm purchasedorderform = new PurchasedOrderForm();
-            purchasedorderform.Show();
-
-            
+            purchasedorderform.Show();  
         }
 
         private void orderDetailsForm_Load(object sender, EventArgs e)
         {
-            orderService orderserv = new orderService();
+            dietService dietserv = new dietService();
             string[] info = new string[2];
-            info = orderserv.getDietType(sumOrderLabel10.userSummaryData);
+            info = dietserv.getDietType(sumOrderLabel10.userSummaryData);
 
             sumOrderLabel10.userSummaryData = info[0];
             sumOrderLabel11.userSummaryData = info[1];

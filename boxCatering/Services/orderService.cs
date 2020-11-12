@@ -12,60 +12,18 @@ namespace boxCatering.Services
 {
     public class orderService
     {
-        public string[] getDietType(string fieldWithDiet)
+        public void addOrderToBase(int customerid, int dietid, int cardid)
         {
-            IDiet Diet = null;
-
-            string[] info = new string[2];
-
-            switch (fieldWithDiet)
+            string sqlStringConnector = "Server =.; Database = boxCatering; Trusted_Connection = True;";
+            using (var sqlConnection = new SqlConnection(sqlStringConnector))
             {
-                case "dietBox1":
-                    {
-                        Diet = new lowCaloriesDiet();
-                        info[0] = Diet.dietType.ToString();
-                        info[1] = Diet.dietDescription();
-                        return info;
-                    }
-                case "dietBox2":
-                    {
-                        Diet = new midCaloriesDiet();
-                        info[0] = Diet.dietType.ToString();
-                        info[1] = Diet.dietDescription();
-                        return info;
-                    }
-                case "dietBox3":
-                    {
-                        Diet = new highCaloriesDiet();
-                        info[0] = Diet.dietType.ToString();
-                        info[1] = Diet.dietDescription();
-                        return info;
-                    }
-                case "dietBox4":
-                    {
-                        Diet = new veganDiet();
-                        info[0] = Diet.dietType.ToString();
-                        info[1] = Diet.dietDescription();
-                        return info;
-                    }
-                case "dietBox5":
-                    {
-                        Diet = new ketoDiet();
-                        info[0] = Diet.dietType.ToString();
-                        info[1] = Diet.dietDescription();
-                        return info;
-                    }
-                case "dietBox6":
-                    {
-                        Diet = new vegetarianDiet();
-                        info[0] = Diet.dietType.ToString();
-                        info[1] = Diet.dietDescription();
-                        return info;
-                    }   
-            }
-            return info;
-        }
-      
+                sqlConnection.Open();
 
+                using (var command = new SqlCommand($"INSERT INTO dbo.orders VALUES ('{customerid}','{dietid}','{cardid}')", sqlConnection))
+                {
+                    var result = command.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
