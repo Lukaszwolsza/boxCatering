@@ -12,7 +12,7 @@ namespace boxCatering.Services
 {
     public class orderService
     {
-        public void addOrderToBase(int customerid, int dietid, int cardid)
+        public int addOrderToBase(int customerid, int dietid, int cardid)
         {
             string sqlStringConnector = "Server =.; Database = boxCatering; Trusted_Connection = True;";
             using (var sqlConnection = new SqlConnection(sqlStringConnector))
@@ -24,6 +24,7 @@ namespace boxCatering.Services
                     var result = command.ExecuteNonQuery();
                 }
             }
+            return customerid;
         }
     }
 }

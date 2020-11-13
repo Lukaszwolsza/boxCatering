@@ -15,6 +15,8 @@ namespace boxCatering.Forms
 {
     public partial class orderDetailsForm : Form
     {
+        public static int orderID;
+
         public orderDetailsForm(string name)
         {
             InitializeComponent();
@@ -71,13 +73,14 @@ namespace boxCatering.Forms
             //Order order = new Order(getCustomerInformation(), getCardInformation(), dietObj);
 
             orderService orderserv = new orderService();
-            orderserv.addOrderToBase(customerID, dietID, paymentID);
+            orderID = orderserv.addOrderToBase(customerID, dietID, paymentID);
             
 
             this.Close();
             PurchasedOrderForm purchasedorderform = new PurchasedOrderForm();
             purchasedorderform.Show();  
         }
+
 
         private void orderDetailsForm_Load(object sender, EventArgs e)
         {

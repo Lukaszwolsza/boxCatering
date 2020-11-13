@@ -36,21 +36,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.sumOrderLabel11 = new Wolsza.Controls.sumOrderLabel();
-            this.sumOrderLabel10 = new Wolsza.Controls.sumOrderLabel();
-            this.sumOrderLabel8 = new Wolsza.Controls.sumOrderLabel();
-            this.sumOrderLabel7 = new Wolsza.Controls.sumOrderLabel();
-            this.sumOrderLabel9 = new Wolsza.Controls.sumOrderLabel();
             this.sumOrderLabel1 = new Wolsza.Controls.sumOrderLabel();
             this.sumOrderLabel2 = new Wolsza.Controls.sumOrderLabel();
             this.sumOrderLabel3 = new Wolsza.Controls.sumOrderLabel();
             this.sumOrderLabel4 = new Wolsza.Controls.sumOrderLabel();
             this.sumOrderLabel5 = new Wolsza.Controls.sumOrderLabel();
             this.sumOrderLabel6 = new Wolsza.Controls.sumOrderLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.sumOrderLabel8 = new Wolsza.Controls.sumOrderLabel();
+            this.sumOrderLabel7 = new Wolsza.Controls.sumOrderLabel();
+            this.sumOrderLabel9 = new Wolsza.Controls.sumOrderLabel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.sumOrderLabel11 = new Wolsza.Controls.sumOrderLabel();
+            this.sumOrderLabel10 = new Wolsza.Controls.sumOrderLabel();
+            this.sumOrderLabel12 = new Wolsza.Controls.sumOrderLabel();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -148,101 +149,11 @@
             this.flowLayoutPanel1.Controls.Add(this.sumOrderLabel4);
             this.flowLayoutPanel1.Controls.Add(this.sumOrderLabel5);
             this.flowLayoutPanel1.Controls.Add(this.sumOrderLabel6);
+            this.flowLayoutPanel1.Controls.Add(this.sumOrderLabel12);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(31, 188);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(350, 385);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(423, 385);
             this.flowLayoutPanel1.TabIndex = 26;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(567, 333);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 25);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Payment details";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(167)))));
-            this.flowLayoutPanel2.Controls.Add(this.sumOrderLabel8);
-            this.flowLayoutPanel2.Controls.Add(this.sumOrderLabel7);
-            this.flowLayoutPanel2.Controls.Add(this.sumOrderLabel9);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(532, 373);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(350, 184);
-            this.flowLayoutPanel2.TabIndex = 28;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(815, 563);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 35);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Order now ! ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(530, 147);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 25);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Diet";
-            // 
-            // sumOrderLabel11
-            // 
-            this.sumOrderLabel11.Location = new System.Drawing.Point(493, 245);
-            this.sumOrderLabel11.Name = "sumOrderLabel11";
-            this.sumOrderLabel11.orderSummaryLabel = "> Desc :";
-            this.sumOrderLabel11.Size = new System.Drawing.Size(335, 48);
-            this.sumOrderLabel11.TabIndex = 32;
-            this.sumOrderLabel11.userSummaryData = "Low calories diet";
-            // 
-            // sumOrderLabel10
-            // 
-            this.sumOrderLabel10.Location = new System.Drawing.Point(493, 191);
-            this.sumOrderLabel10.Name = "sumOrderLabel10";
-            this.sumOrderLabel10.orderSummaryLabel = "> Type :";
-            this.sumOrderLabel10.Size = new System.Drawing.Size(335, 48);
-            this.sumOrderLabel10.TabIndex = 31;
-            this.sumOrderLabel10.userSummaryData = "2000 kcal";
-            // 
-            // sumOrderLabel8
-            // 
-            this.sumOrderLabel8.Location = new System.Drawing.Point(3, 3);
-            this.sumOrderLabel8.Name = "sumOrderLabel8";
-            this.sumOrderLabel8.orderSummaryLabel = "> Diet price :";
-            this.sumOrderLabel8.Size = new System.Drawing.Size(335, 48);
-            this.sumOrderLabel8.TabIndex = 1;
-            this.sumOrderLabel8.userSummaryData = "30$";
-            // 
-            // sumOrderLabel7
-            // 
-            this.sumOrderLabel7.Location = new System.Drawing.Point(3, 57);
-            this.sumOrderLabel7.Name = "sumOrderLabel7";
-            this.sumOrderLabel7.orderSummaryLabel = "> Total price :";
-            this.sumOrderLabel7.Size = new System.Drawing.Size(335, 48);
-            this.sumOrderLabel7.TabIndex = 0;
-            this.sumOrderLabel7.userSummaryData = "120$";
-            // 
-            // sumOrderLabel9
-            // 
-            this.sumOrderLabel9.Location = new System.Drawing.Point(3, 111);
-            this.sumOrderLabel9.Name = "sumOrderLabel9";
-            this.sumOrderLabel9.orderSummaryLabel = "> Payment method : ";
-            this.sumOrderLabel9.Size = new System.Drawing.Size(335, 48);
-            this.sumOrderLabel9.TabIndex = 2;
-            this.sumOrderLabel9.userSummaryData = "Credit Card";
             // 
             // sumOrderLabel1
             // 
@@ -298,6 +209,106 @@
             this.sumOrderLabel6.TabIndex = 5;
             this.sumOrderLabel6.userSummaryData = "123456789";
             this.sumOrderLabel6.Load += new System.EventHandler(this.sumOrderLabel6_Load);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(567, 333);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(159, 25);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Payment details";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(167)))));
+            this.flowLayoutPanel2.Controls.Add(this.sumOrderLabel8);
+            this.flowLayoutPanel2.Controls.Add(this.sumOrderLabel7);
+            this.flowLayoutPanel2.Controls.Add(this.sumOrderLabel9);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(532, 373);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(350, 184);
+            this.flowLayoutPanel2.TabIndex = 28;
+            // 
+            // sumOrderLabel8
+            // 
+            this.sumOrderLabel8.Location = new System.Drawing.Point(3, 3);
+            this.sumOrderLabel8.Name = "sumOrderLabel8";
+            this.sumOrderLabel8.orderSummaryLabel = "> Diet price :";
+            this.sumOrderLabel8.Size = new System.Drawing.Size(335, 48);
+            this.sumOrderLabel8.TabIndex = 1;
+            this.sumOrderLabel8.userSummaryData = "30$";
+            // 
+            // sumOrderLabel7
+            // 
+            this.sumOrderLabel7.Location = new System.Drawing.Point(3, 57);
+            this.sumOrderLabel7.Name = "sumOrderLabel7";
+            this.sumOrderLabel7.orderSummaryLabel = "> Total price :";
+            this.sumOrderLabel7.Size = new System.Drawing.Size(335, 48);
+            this.sumOrderLabel7.TabIndex = 0;
+            this.sumOrderLabel7.userSummaryData = "120$";
+            // 
+            // sumOrderLabel9
+            // 
+            this.sumOrderLabel9.Location = new System.Drawing.Point(3, 111);
+            this.sumOrderLabel9.Name = "sumOrderLabel9";
+            this.sumOrderLabel9.orderSummaryLabel = "> Payment method : ";
+            this.sumOrderLabel9.Size = new System.Drawing.Size(335, 48);
+            this.sumOrderLabel9.TabIndex = 2;
+            this.sumOrderLabel9.userSummaryData = "Credit Card";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(815, 563);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 35);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Order now ! ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(530, 147);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 25);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Diet";
+            // 
+            // sumOrderLabel11
+            // 
+            this.sumOrderLabel11.Location = new System.Drawing.Point(493, 245);
+            this.sumOrderLabel11.Name = "sumOrderLabel11";
+            this.sumOrderLabel11.orderSummaryLabel = "> Desc :";
+            this.sumOrderLabel11.Size = new System.Drawing.Size(335, 48);
+            this.sumOrderLabel11.TabIndex = 32;
+            this.sumOrderLabel11.userSummaryData = "Low calories diet";
+            // 
+            // sumOrderLabel10
+            // 
+            this.sumOrderLabel10.Location = new System.Drawing.Point(493, 191);
+            this.sumOrderLabel10.Name = "sumOrderLabel10";
+            this.sumOrderLabel10.orderSummaryLabel = "> Type :";
+            this.sumOrderLabel10.Size = new System.Drawing.Size(335, 48);
+            this.sumOrderLabel10.TabIndex = 31;
+            this.sumOrderLabel10.userSummaryData = "2000 kcal";
+            // 
+            // sumOrderLabel12
+            // 
+            this.sumOrderLabel12.Location = new System.Drawing.Point(3, 327);
+            this.sumOrderLabel12.Name = "sumOrderLabel12";
+            this.sumOrderLabel12.orderSummaryLabel = "> E-mail : ";
+            this.sumOrderLabel12.Size = new System.Drawing.Size(320, 48);
+            this.sumOrderLabel12.TabIndex = 6;
+            this.sumOrderLabel12.userSummaryData = "example@gmail.com";
             // 
             // PurchasedOrderForm
             // 
@@ -356,5 +367,6 @@
         private System.Windows.Forms.Label label5;
         private Wolsza.Controls.sumOrderLabel sumOrderLabel10;
         private Wolsza.Controls.sumOrderLabel sumOrderLabel11;
+        private Wolsza.Controls.sumOrderLabel sumOrderLabel12;
     }
 }

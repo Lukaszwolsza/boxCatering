@@ -93,6 +93,7 @@
     <Compile Include="Services\dietService.cs" />
     <Compile Include="Services\orderService.cs" />
     <Compile Include="Services\paymentService.cs" />
+    <Compile Include="Services\summaryService.cs" />
     <Compile Include="Services\UserService.cs" />
     <EmbeddedResource Include="Forms\ContactForm.resx">
       <DependentUpon>ContactForm.cs</DependentUpon>

@@ -43,6 +43,7 @@ CREATE TABLE orders(
 )
 
 select * from dbo.users where USER_LOGIN = 'user1' AND USER_PASSWORD = 'user2fe'
+select * from dbo.customers where ID_CUSTOMER = '24'
 select * from dbo.customers
 select * from dbo.cards
 select * from dbo.diets
